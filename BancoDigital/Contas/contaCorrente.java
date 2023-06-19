@@ -1,0 +1,16 @@
+package BancoDigital.Contas;
+
+import BancoDigital.Cliente;
+
+public class contaCorrente extends Conta {
+
+    public contaCorrente(Cliente cliente){
+        super(cliente);
+    }
+
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta Corrente ===");
+        super.imprimirInfosComuns();
+    }
+}
