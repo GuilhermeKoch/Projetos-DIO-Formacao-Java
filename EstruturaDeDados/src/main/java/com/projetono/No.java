@@ -1,34 +1,37 @@
 package com.projetono;
 
-public class No<T> {
+public class No {
 
-    private T conteudo;
-    private No<T> proximoNo;
+    private int dado;
+    private No refNo = null;
 
-    public No(T conteudo) {
-        this.proximoNo = null;
-        this.conteudo = conteudo;
+    public No(){
     }
 
-    public T getConteudo() {
-        return conteudo;
+    public No(int dado) {
+        this.dado = dado;
     }
 
-    public void setConteudo(T conteudo) {
-        this.conteudo = conteudo;
+        public No getRefNo() {
+        return refNo;
     }
 
-    public No<T> getProximoNo() {
-        return proximoNo;
+    public void setRefNo(No noRe) {
+        this.refNo = noRe;
     }
 
-    public void setProximoNo(No<T> proximoNo) {
-        this.proximoNo = proximoNo;
-    }
+    public int getDado() {
+            return dado;
+        }
 
-    @Override
-    public String toString() {
-        return "No [conteudo=" + conteudo + "]";
-    }
+        public void setDado(int dado) {
+            this.dado = dado;
+        }
 
+        public String toString(){
+            return "No = [Dado = " + dado +"]";
+        }
+
+        public void setReNo(No refAuxiliar) {
+        }
 }
