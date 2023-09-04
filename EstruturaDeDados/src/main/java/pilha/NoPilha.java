@@ -1,22 +1,22 @@
-package com.projetono;
+package pilha;
 
-public class No {
+public class NoPilha {
 
     private int dado;
-    private No refNo = null;
+    private NoPilha refNo = null;
 
-    public No(){
+    public NoPilha(){
     }
 
-    public No(int dado) {
+    public NoPilha(int dado) {
         this.dado = dado;
     }
 
-        public No getRefNo() {
+        public NoPilha getRefNo() {
         return refNo;
     }
 
-    public void setRefNo(No noRe) {
+    public void setRefNo(NoPilha noRe) {
         this.refNo = noRe;
     }
 
@@ -32,6 +32,6 @@ public class No {
             return "No = [Dado = " + dado +"]";
         }
 
-        public void setReNo(No refAuxiliar) {
+        public void setReNo(NoPilha refAuxiliar) {
         }
 }
